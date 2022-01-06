@@ -29,7 +29,7 @@ namespace CSharpMSSQL
         {
 
             _ConnObj = new System.Data.SqlClient.SqlConnection();// we create a new connection object
-            _ConnObj.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\repos\Teaching\C#\CSharpMSSQL\CSharpMSSQL\ClubMemebers.mdf;Integrated Security=True";//we use the location of our table as the connection string
+            _ConnObj.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\m3\source\repos\ITDCanada\C#\CSharpMSSQL\CSharpMSSQL\ClubMemebers.mdf;Integrated Security=True";//we use the location of our table as the connection string
             _ConnObj.Open();
             String SqlStr = "SELECT * FROM MemberList";//makes our SQL statment
             //the following two lines are always used to connect to our table  
